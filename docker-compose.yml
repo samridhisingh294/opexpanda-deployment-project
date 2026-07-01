@@ -7,3 +7,8 @@ services:
     environment:
       - FLASK_ENV=production
     restart: always
+    volumes:
+      - app-logs:/app/logs
+
+volumes:
+  app-logs:
